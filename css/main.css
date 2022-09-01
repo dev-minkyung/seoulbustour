@@ -1,0 +1,70 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+main {
+  height: 100vh;
+  max-height: 800px;
+}
+main .tour-search-bar {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 32px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  display: flex;
+  gap: 32px;
+  margin: 0 auto;
+}
+main .tour-search-bar fieldset {
+  flex-basis: 35%;
+  padding-right: 32px;
+  border-right: 1px solid #F4F4F4;
+}
+main .tour-search-bar fieldset .tour-course {
+  padding-left: 0;
+}
+main .tour-search-bar fieldset legend {
+  padding-left: 16px;
+  color: #9A9A9A;
+}
+main .tour-search-bar .tour-date .tour-date-selected {
+  width: calc(100% - 32px);
+  padding: 12px 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.125rem;
+  line-height: 24px;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+}
+main .tour-search-bar .tourist-number {
+  flex-basis: 30%;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+main .tour-search-bar .tourist-number .tourist {
+  flex-basis: 50%;
+}
+main .tour-search-bar .btn-tour-search {
+  flex-basis: 10%;
+  min-width: 74px;
+  background: #FABC1D;
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .tour-search-bar .btn-tour-search .search-text {
+  display: none;
+}

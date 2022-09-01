@@ -1,0 +1,200 @@
+
+@import'./style.scss';
+
+/* Common */
+* {
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: $black;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  
+}
+span {
+  line-height: 1.5;
+}
+
+select {
+  border: 0;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.inner {
+  position: relative; 
+  max-width: 1320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.picture{
+  display:block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  & > * {
+    width: 100%;
+  }
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid $gray700;
+  border-radius: $radius-4;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: center;
+  line-height: 1.5;
+}
+.btn__reverse {
+  background: $gray700;
+  color: $white;
+}
+
+/* Select */
+.select-box {
+  min-width: 100px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.select-box .option,
+.selected {
+  font-size: 1.125rem;
+  line-height: 24px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+// 셀렉트 옵션 리스트
+.options-container {
+  background-color: #fff;
+  border: 1px solid $gray200;
+  border-radius: $radius-4;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  order: 1;
+
+  position: absolute;
+  top: 48px;
+  z-index: 10;
+
+  &.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: auto;
+  }
+
+  &.active + .selected::after {
+    transform: rotate(180deg);
+  }
+
+  // 셀렉트 스크롤바
+  &::-webkit-scrollbar {
+    width: 6px;
+    background: $gray200;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $gray300;
+    border-radius: 3px;
+  }
+
+  .option {
+    label {
+      display: block;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+    &:hover {
+      background: $gray100;
+    }
+  }
+}
+
+// 선택된 셀렉트
+.selected {
+  position: relative;
+  order: 0;
+
+  &::after {
+    content: '';
+    background: url('../images/Icons/Small/line_arrow_down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 14px;
+    right: 6px;
+  }
+}
+
+
+/* Header */
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .header_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    .logo {
+      display: inline-block;
+      width: 140px;
+      height: 32px;
+    }
+
+    .ic-main-menu {
+      display: none;
+    }
+
+    .main-menu {
+      width: calc(100% - 140px);
+      display: flex;
+      justify-content: space-between;
+
+      .tour-menu {
+        display: flex;
+        li {
+          padding-right: 32px;
+        }
+      }
+      .btn-login {
+        display: flex;
+        gap: 16px;
+        color: $white;
+      }
+    }
+  }
+}
+

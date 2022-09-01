@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seoulbustour</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="inner header_container">
+      <div class="logo"><span>서울버스투어</span></div>
+      <div class="ic-main-menu"></div>
+      <nav class="main-menu">
+        <ul class="tour-menu">
+          <li><a href="javascript:void(0)">투어코스</a></li>
+          <li><a href="javascript:void(0)">예약서비스</a></li>
+          <li><a href="javascript:void(0)">이벤트</a></li>
+          <li><a href="javascript:void(0)">기업/단체</a></li>
+          <li><a href="javascript:void(0)">회사소개</a></li>
+          <li><a href="javascript:void(0)"><span>고객센터</span></a></li>
+        </ul>
+        <ul class="btn-login">
+          <li><a class="btn" href="javascript:void(0)"><span>로그인</span></a></li>
+          <li><a class="btn btn__reverse" href="javascript:void(0)"><span>예약하기</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <picture class="bg-main-view">
+      <source media="(min-width: 769px)" srcset="images/Bg_mainview_pc.jpg" >
+      <source media="(max-width: 768px)" srcset="images/Bg_mainview_mobile.png">
+      <img src="./images/Bg_mainview_pc.jpg" alt="Seoulbustour">
+    </picture>
+
+    <div class="inner">
+      <form class="tour-search-bar">
+        <!-- 투어 코스 선택 -->
+        <fieldset class="tour-course">
+          <legend>투어코스</legend>
+          <div class="select-box">
+            <ul class="options-container">
+              <li class="option">
+                <input type="radio" name="tour_course" id="course_1" value="전통고궁코스">
+                <label for="course_1">전통고궁코스</label>
+              </li>
+              <li class="option">
+                <input type="radio" name="tour_course" id="course_2" value="한강잠실코스">
+                <label for="course_2">한강잠실코스</label>
+              </li>
+              <li class="option">
+                <input type="radio" name="tour_course" id="course_3" value="야경코스">
+                <label for="course_3">야경코스</label>
+              </li>
+            </ul>
+  
+            <div class="selected">투어코스를 선택해주세요.</div>
+          </div>
+        </fieldset>
+  
+        <!-- 투어 일정 선택-->
+        <fieldset class="tour-date">
+          <legend>투어일정</legend>
+          <input type="date" class="tour-date-selected"/>
+        </fieldset>
+  
+        <!-- 투어 인원 선택 -->
+        <fieldset class="tourist-number">
+          <div class="adult tourist">
+            <legend>성인</legend>
+            <div class="select-box">
+              <ul class="options-container">
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_0" value="0">
+                  <label for="number_0">0명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_1" value="1">
+                  <label for="number_1">1명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_2" value="2">
+                  <label for="number_2">2명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_3" value="3">
+                  <label for="number_3">3명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_4" value="4">
+                  <label for="number_4">4명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_5" value="5">
+                  <label for="number_5">5명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_6" value="6">
+                  <label for="number_6">6명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_7" value="7">
+                  <label for="number_7">7명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_8" value="8">
+                  <label for="number_8">8명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_9" value="9">
+                  <label for="number_9">9명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_10" value="10">
+                  <label for="number_10">10명</label>
+                </li>
+              </ul>
+    
+              <div class="selected">0명</div>
+            </div>
+          </div><!--// 성인 인원 선택 끝 -->
+
+          <div class="children tourist">
+            <legend>어린이</legend>
+            <div class="select-box">
+              <ul class="options-container">
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_0" value="0">
+                  <label for="number_0">0명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_1" value="1">
+                  <label for="number_1">1명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_2" value="2">
+                  <label for="number_2">2명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_3" value="3">
+                  <label for="number_3">3명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_4" value="4">
+                  <label for="number_4">4명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_5" value="5">
+                  <label for="number_5">5명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_6" value="6">
+                  <label for="number_6">6명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_7" value="7">
+                  <label for="number_7">7명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_8" value="8">
+                  <label for="number_8">8명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_9" value="9">
+                  <label for="number_9">9명</label>
+                </li>
+                <li class="option">
+                  <input type="radio" name="tour_course" id="number_10" value="10">
+                  <label for="number_10">10명</label>
+                </li>
+              </ul>
+    
+              <div class="selected">0명</div>
+            </div>
+          </div><!-- // 어린이 인원 선택 끝-->
+
+        </fieldset>
+        <button type="submit" class="btn-tour-search">
+          <img src="./images/Icons/Small/search.svg" alt="검색">
+          <span class="search-text">검색하기</span>
+        </button>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
