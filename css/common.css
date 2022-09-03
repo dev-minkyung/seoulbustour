@@ -50,6 +50,21 @@ select {
   width: 100%;
 }
 
+input {
+  /*ios대응*/
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+select {
+  /*ios대응*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* 아이콘 */
 .icon-sm {
   width: 16px;
   height: 16px;

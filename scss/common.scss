@@ -50,6 +50,19 @@ select {
   }
 }
 
+input{
+  /*ios대응*/
+  appearance: none;
+  -webkit-appearance: none;
+}
+select{
+  /*ios대응*/
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  appearance: none;
+}
+
+/* 아이콘 */
 .icon-sm {
   width: 16px;
   height: 16px;
@@ -61,6 +74,7 @@ select {
   height: 24px;
   cursor: pointer;
 }
+
 
 /* 버튼 스타일*/
 .btn {
