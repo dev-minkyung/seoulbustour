@@ -60,7 +60,7 @@ select{
   -webkit-appearance: none;
   -moz-appearance: none; 
   appearance: none;
-  color: $black;
+  color: $black in !important;
   background-color: inherit;
 }
 

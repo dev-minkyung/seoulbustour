@@ -62,7 +62,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #191919;
+  color: #191919 in !important;
   background-color: inherit;
 }
 
