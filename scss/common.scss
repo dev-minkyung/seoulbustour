@@ -54,9 +54,24 @@ input{
   /*ios대응*/
   appearance: none !important;
   -webkit-appearance: none !important;
-  text-align: left !important;
   color: $black;
   background-color: transparent;
+
+  &::-webkit-datetime-edit-text {
+    text-align: left;
+  }
+  &::-webkit-calendar-picker-indicator { 
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
 }
 select{
   /*ios대응*/

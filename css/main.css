@@ -111,6 +111,8 @@ main .tour-search-bar .btn-tour-search .search-text {
   }
   main .tour-search-bar fieldset {
     padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #F4F4F4;
   }
   main .tour-search-bar fieldset .select-box {
     min-width: 100%;

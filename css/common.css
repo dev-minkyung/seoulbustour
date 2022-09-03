@@ -55,9 +55,23 @@ input {
   -moz-appearance: none !important;
        appearance: none !important;
   -webkit-appearance: none !important;
-  text-align: left !important;
   color: #191919;
   background-color: transparent;
+}
+input::-webkit-datetime-edit-text {
+  text-align: left;
+}
+input::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
 }
 
 select {
