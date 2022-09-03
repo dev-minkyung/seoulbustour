@@ -55,7 +55,9 @@ input {
   -moz-appearance: none !important;
        appearance: none !important;
   -webkit-appearance: none !important;
-  text-align: left;
+  text-align: left !important;
+  color: #191919;
+  background-color: transparent;
 }
 
 select {
@@ -63,6 +65,8 @@ select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
+  color: #191919;
+  background-color: transparent;
 }
 
 /* 아이콘 */

@@ -54,13 +54,17 @@ input{
   /*ios대응*/
   appearance: none !important;
   -webkit-appearance: none !important;
-  text-align: left;
+  text-align: left !important;
+  color: $black;
+  background-color: transparent;
 }
 select{
   /*ios대응*/
   -webkit-appearance: none !important;
   -moz-appearance: none !important; 
   appearance: none !important;
+  color: $black;
+  background-color: transparent;
 }
 
 /* 아이콘 */
