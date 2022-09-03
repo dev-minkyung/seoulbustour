@@ -54,13 +54,15 @@ input{
   /*ios대응*/
   appearance: none;
   -webkit-appearance: none;
+  color: $black;
+  background-color: transparent;
 }
 select{
   /*ios대응*/
   -webkit-appearance: none;
   -moz-appearance: none; 
   appearance: none;
-  color: $black !important;
+  color: $black;
   background-color: transparent;
 }
 

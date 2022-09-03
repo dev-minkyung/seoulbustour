@@ -55,6 +55,8 @@ input {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
+  color: #191919;
+  background-color: transparent;
 }
 
 select {
@@ -62,7 +64,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #191919 !important;
+  color: #191919;
   background-color: transparent;
 }
 
