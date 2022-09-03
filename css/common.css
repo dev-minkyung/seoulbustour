@@ -52,9 +52,9 @@ select {
 
 input {
   /*ios대응*/
-  -moz-appearance: none;
-       appearance: none;
-  -webkit-appearance: none;
+  -moz-appearance: none !important;
+       appearance: none !important;
+  -webkit-appearance: none !important;
   color: #191919;
   background-color: transparent;
 }

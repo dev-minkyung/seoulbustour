@@ -52,8 +52,8 @@ select {
 
 input{
   /*ios대응*/
-  appearance: none;
-  -webkit-appearance: none;
+  appearance: none !important;
+-webkit-appearance: none !important;
   color: $black;
   background-color: transparent;
 }
