@@ -60,6 +60,8 @@ select{
   -webkit-appearance: none;
   -moz-appearance: none; 
   appearance: none;
+  color: $black;
+  background-color: inherit;
 }
 
 /* 아이콘 */
