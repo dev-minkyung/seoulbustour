@@ -62,8 +62,8 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #191919 in !important;
-  background-color: inherit;
+  color: #191919 !important;
+  background-color: transparent;
 }
 
 /* 아이콘 */
