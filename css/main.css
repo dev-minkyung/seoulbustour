@@ -3,15 +3,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 main {
+  width: 100%;
   height: 100vh;
   max-height: 800px;
 }
-main .tour-search-bar {
+main .main-view {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  z-index: -1;
+}
+main .main-view .bg-main-view img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
   position: absolute;
-  top: -50%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .main-view .main-view-text {
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  font-size: 120px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0.7;
+}
+main .main-view .main-view-text .point-text {
+  font-family: "Permanent Marker", cursive;
+  color: #FABC1D;
+  transform: translateY(-10px);
+}
+main .tour-search-bar {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 95%;
+  max-width: 1056px;
   padding: 32px;
   border-radius: 8px;
   box-sizing: border-box;
@@ -26,12 +61,12 @@ main .tour-search-bar fieldset {
   padding-right: 32px;
   border-right: 1px solid #F4F4F4;
 }
-main .tour-search-bar fieldset .tour-course {
-  padding-left: 0;
-}
 main .tour-search-bar fieldset legend {
   padding-left: 16px;
   color: #9A9A9A;
+}
+main .tour-search-bar .tour-course {
+  padding-left: 0;
 }
 main .tour-search-bar .tour-date .tour-date-selected {
   width: calc(100% - 32px);
@@ -67,4 +102,55 @@ main .tour-search-bar .btn-tour-search {
 }
 main .tour-search-bar .btn-tour-search .search-text {
   display: none;
+}
+
+@media (max-width: 1000px) {
+  main .tour-search-bar {
+    flex-direction: column;
+    gap: 24px;
+  }
+  main .tour-search-bar fieldset {
+    padding-right: 0;
+  }
+  main .tour-search-bar fieldset .select-box {
+    min-width: 100%;
+  }
+  main .tour-search-bar .btn-tour-search {
+    min-height: 54px;
+  }
+  main .tour-search-bar .btn-tour-search .ic-search {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  main .tour-search-bar .btn-tour-search .search-text {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+@media (max-width: 768px) {
+  main .main-view {
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  main .main-view .bg-main-view img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .main-view .main-view-text {
+    font-size: 72px;
+    top: 30%;
+  }
+  main .main-view .main-view-text .point-text {
+    transform: translateY(-5px);
+  }
+  main .tour-search-bar {
+    width: calc(100% - 40px);
+    padding: 24px;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+  }
 }

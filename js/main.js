@@ -1,3 +1,27 @@
+/* Header */
+const header = document.querySelector('.header')
+window.onscroll = function() {
+  if (window.pageYOffset > 0) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+};
+
+
+/* main-menu 토글버튼 */
+const menuBtn = document.querySelector('.ic-main-menu');
+const closeBtn = document.querySelector('.btn-close');
+const mainMenu = document.querySelector('.main-menu');
+
+menuBtn.addEventListener('click', function() {
+  mainMenu.classList.add('active');
+});
+closeBtn.addEventListener('click', function() {
+  mainMenu.classList.remove('active');
+});
+
+
 /* select */
 const selectedAll = document.querySelectorAll('.selected');
 

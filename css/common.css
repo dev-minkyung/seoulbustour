@@ -1,9 +1,12 @@
+@charset "UTF-8";
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /* Common */
-* {
+body {
+  width: 100%;
+  max-width: 1920px;
   font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -12,19 +15,14 @@
   color: #191919;
 }
 
-body {
-  width: 100%;
-  max-width: 1920px;
-}
-
 a {
   text-decoration: none;
   color: inherit;
   font-size: 16px;
 }
 
-span {
-  line-height: 1.5;
+img {
+  display: block;
 }
 
 select {
@@ -52,19 +50,45 @@ select {
   width: 100%;
 }
 
+.icon-sm {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.icon-m {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* 버튼 스타일*/
 .btn {
   padding: 8px 16px;
-  border: 1px solid #333333;
+  border: 1px solid #6A6A6A;
   border-radius: 4px;
   box-sizing: border-box;
   text-align: center;
   vertical-align: center;
-  line-height: 1.5;
+  color: #191919;
+  transition: all 0.6s;
 }
 
-.btn__reverse {
+.btn.btn--reverse {
   background: #333333;
   color: #ffffff;
+  transition: all 0.4s;
+}
+
+/*  버튼 Hover 스타일*/
+.btn:hover {
+  border-color: #FABC1D;
+  color: #FABC1D;
+}
+
+.btn.btn--reverse:hover {
+  color: #ffffff;
+  background-color: #FABC1D;
 }
 
 /* Select */
@@ -148,6 +172,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  transition: all 0.6s;
+  z-index: 100;
 }
 header .header_container {
   height: 100%;
@@ -158,8 +184,12 @@ header .header_container {
 }
 header .header_container .logo {
   display: inline-block;
-  width: 140px;
+  width: auto;
   height: 32px;
+}
+header .header_container .logo img {
+  display: block;
+  height: 100%;
 }
 header .header_container .ic-main-menu {
   display: none;
@@ -169,14 +199,114 @@ header .header_container .main-menu {
   display: flex;
   justify-content: space-between;
 }
+header .header_container .main-menu .btn-close {
+  display: none;
+}
 header .header_container .main-menu .tour-menu {
   display: flex;
 }
 header .header_container .main-menu .tour-menu li {
   padding-right: 32px;
+  transition: all 0.4s;
+}
+header .header_container .main-menu .tour-menu li:hover {
+  color: #FABC1D;
 }
 header .header_container .main-menu .btn-login {
   display: flex;
   gap: 16px;
   color: #ffffff;
+}
+header.active {
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  header .header_container .ic-main-menu {
+    display: block;
+  }
+  header .header_container .main-menu {
+    opacity: 0;
+    visibility: 0;
+    transform: translateX(100%);
+    transition: all 0.6s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    flex-direction: column;
+    gap: 16px;
+    width: 45%;
+    height: 100vh;
+    padding: 10% 40px;
+    box-sizing: border-box;
+    background: #000;
+  }
+  header .header_container .main-menu .btn-close {
+    display: block;
+    order: 0;
+    text-align: right;
+    cursor: pointer;
+  }
+  header .header_container .main-menu .btn-close img {
+    display: inline-block;
+    transition: all 0.4s;
+  }
+  header .header_container .main-menu .btn-close:hover img {
+    transform: rotate(90deg);
+  }
+  header .header_container .main-menu .tour-menu {
+    order: 2;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  header .header_container .main-menu .tour-menu li {
+    width: calc(100% - 32px);
+    padding: 16px;
+    color: #ffffff;
+  }
+  header .header_container .main-menu .btn-login {
+    order: 1;
+    height: 48px;
+  }
+  header .header_container .main-menu .btn-login li {
+    flex-basis: 50%;
+  }
+  header .header_container .main-menu .btn-login li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    line-height: 30px;
+  }
+  header .header_container .main-menu .btn-login .login {
+    border: 1px solid #9A9A9A;
+    transition: all 0.6s;
+  }
+  header .header_container .main-menu .btn-login .login:hover {
+    border-color: #FABC1D;
+    color: #FABC1D;
+  }
+  header .header_container .main-menu .btn-login .reservation {
+    border: none;
+    background-color: #FABC1D;
+    transition: all 0.6s;
+  }
+  header .header_container .main-menu .btn-login .reservation:hover {
+    background-color: #e9a905;
+  }
+  header .header_container .main-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  header .header_container .main-menu {
+    width: 100vw;
+    box-sizing: border-box;
+  }
 }

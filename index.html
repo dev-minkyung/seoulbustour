@@ -13,33 +13,42 @@
   <script defer src="./js/main.js"></script>
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="inner header_container">
-      <div class="logo"><span>서울버스투어</span></div>
-      <div class="ic-main-menu"></div>
+      <div class="logo"><img src="./images/logo.svg" alt="서울버스투어"></div>
+      <div class="ic-main-menu"><img class="icon-m" src="./images/Icons/Medium/menu.svg" alt="메뉴"></div>
       <nav class="main-menu">
+        <div class="btn-close"><img class="icon-m" src="./images/Icons/Medium/close.svg" alt="닫기"></div>
         <ul class="tour-menu">
           <li><a href="javascript:void(0)">투어코스</a></li>
           <li><a href="javascript:void(0)">예약서비스</a></li>
           <li><a href="javascript:void(0)">이벤트</a></li>
           <li><a href="javascript:void(0)">기업/단체</a></li>
           <li><a href="javascript:void(0)">회사소개</a></li>
-          <li><a href="javascript:void(0)"><span>고객센터</span></a></li>
+          <li><a href="javascript:void(0)">고객센터</a></li>
         </ul>
         <ul class="btn-login">
-          <li><a class="btn" href="javascript:void(0)"><span>로그인</span></a></li>
-          <li><a class="btn btn__reverse" href="javascript:void(0)"><span>예약하기</span></a></li>
+          <li><a class="btn login" href="javascript:void(0)">로그인</a></li>
+          <li><a class="btn btn--reverse reservation" href="javascript:void(0)">예약하기</a></li>
         </ul>
       </nav>
-    </div>
+    </div> 
   </header>
 
   <main>
-    <picture class="bg-main-view">
-      <source media="(min-width: 769px)" srcset="images/Bg_mainview_pc.jpg" >
-      <source media="(max-width: 768px)" srcset="images/Bg_mainview_mobile.png">
-      <img src="./images/Bg_mainview_pc.jpg" alt="Seoulbustour">
-    </picture>
+    <div class="main-view">
+      <picture class="bg-main-view">
+        <source media="(min-width: 769px)" srcset="images/Bg_mainview_pc.jpg" >
+        <source media="(max-width: 768px)" srcset="images/Bg_mainview_mobile.png">
+        <img src="./images/Bg_mainview_pc.jpg" alt="Seoulbustour">
+      </picture>
+      <div class="main-view-text">
+        <p>seoul</p>
+        <p class="point-text">bus</p>
+        <p>tour</p>
+      </div>
+    </div>
+
 
     <div class="inner">
       <form class="tour-search-bar">
@@ -184,7 +193,7 @@
 
         </fieldset>
         <button type="submit" class="btn-tour-search">
-          <img src="./images/Icons/Small/search.svg" alt="검색">
+          <img class="ic-search icon-m" src="./images/Icons/Medium/search.svg" alt="검색">
           <span class="search-text">검색하기</span>
         </button>
       </form>
