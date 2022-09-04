@@ -298,6 +298,68 @@ header {
   }
 }
 
+/* footer */
+footer {
+  background: #F8F8F8;
+  padding: 60px 0;
+
+  .footer-container {
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-info {
+      .customer-center {
+        margin-bottom: 32px;
+        .phone-number {
+          font-size: 1.625rem;
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+      }
+      .corp-info {
+        li {
+          margin-bottom: 2px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .operating-hours,
+      .copyright {
+        color: $gray600;
+      }
+    }
+
+    .footer-menu-list {
+      flex-basis: 40%;
+      display: flex;
+      gap: 32px;
+      .footer-menu {
+        flex: 1 1 30%;
+        .footer-menu-title {
+          font-weight: bold;
+        }
+        li {
+          margin-top: 6px;
+          &:nth-child(1) {
+            margin-top: 16px;
+          }
+          a {
+            font-size: 0.875rem;
+            transition: .6s ease-in-out;
+            &:hover {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 /* Tablet */
 @media (max-width: 1000px) {
   header {
@@ -393,6 +455,14 @@ header {
       }
     }
   }
+  
+  footer {
+    .footer-container {
+      .footer-menu-list {
+        flex-basis: 55%;
+      }
+    }
+  }
 }
 
 /* Mobile */
@@ -413,6 +483,15 @@ header {
       .main-menu {
         width: 100vw;
         box-sizing: border-box;
+      }
+    }
+  }
+
+  footer {
+    padding: 40px 0;
+    .footer-container {
+      .footer-menu-list {
+        display: none;
       }
     }
   }

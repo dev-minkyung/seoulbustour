@@ -99,3 +99,8 @@ let swiper = new Swiper(".mySwiper", {
     dragSize: 'auto',
   },
 });
+
+
+/* footer 올해 연도 */
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
