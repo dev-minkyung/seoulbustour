@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* Tablet */
+@media (max-width: 1000px) {
+  /* main-view - tablet */
+  main {
+    height: 904px;
+  }
+  main .tour-search-bar {
+    flex-direction: column;
+    gap: 24px;
+  }
+  main .tour-search-bar fieldset {
+    padding-right: 0;
+    border-right: none;
+  }
+  main .tour-search-bar fieldset .select-box {
+    min-width: 100%;
+  }
+  main .tour-search-bar .btn-tour-search {
+    min-height: 54px;
+  }
+  main .tour-search-bar .btn-tour-search .ic-search {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  main .tour-search-bar .btn-tour-search .search-text {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  /* 투어 코스 영역 - tablet */
+  #tour-course .tour-container .tour-list {
+    gap: 16px;
+  }
+  /* 서울 투어 명소 영역 */
+  #seoul-spot .seoul-spot-content .content .spot .swiper-horizontal .swiper-scrollbar {
+    width: 78% !important;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .swiper-button-prev {
+    left: 4% !important;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .swiper-button-next {
+    right: 4% !important;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .spot-card {
+    width: 80%;
+    margin: 0 8%;
+  }
+}
+@media (max-width: 768px) {
+  /* main-view - mobile */
+  main {
+    height: 100vh;
+  }
+  main .main-view {
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  main .main-view .bg-main-view img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .main-view .main-view-text {
+    font-size: 72px;
+    top: 30%;
+  }
+  main .main-view .main-view-text .point-text {
+    transform: translateY(-5px);
+  }
+  main .tour-search-bar {
+    width: calc(100% - 40px);
+    padding: 24px;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+  }
+  /* 투어 코스 영역 - mobile */
+  #tour-course .tour-container .tour-list {
+    flex-direction: column;
+  }
+  #tour-course .tour-container .tour-list li {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+  #tour-course .tour-container .tour-list li .tour-img {
+    height: 240px;
+  }
+  #tour-course .tour-container .tour-list li .tour-info .tour-name {
+    font-size: 1;
+  }
+  #tour-course .tour-container .tour-list li .tour-info .tour-text {
+    display: inline;
+    font-size: 14px;
+  }
+  /* 서울 투어 명소 영역 - mobile*/
+  #seoul-spot {
+    padding: 60px 0;
+  }
+  #seoul-spot .seoul-spot-content .tabs {
+    justify-content: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  #seoul-spot .seoul-spot-content .tabs .tab {
+    min-width: 80px;
+  }
+  #seoul-spot .seoul-spot-content .tabs .tab img {
+    width: 65px;
+    height: 65px;
+  }
+  #seoul-spot .seoul-spot-content .tabs .tab:first-child {
+    margin-left: 20px;
+  }
+  #seoul-spot .seoul-spot-content .tabs .tab:last-child {
+    margin-right: 20px;
+  }
+  #seoul-spot .seoul-spot-content .tabs::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .swiper-wrapper .swiper-slide:not(.swiper-slide-active) {
+    opacity: 60%;
+    filter: blur(2px);
+  }
+  #seoul-spot .seoul-spot-content .content .spot .swiper-horizontal .swiper-scrollbar {
+    width: calc(100% - 46px) !important;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .swiper-button-prev,
+#seoul-spot .seoul-spot-content .content .spot .swiper-button-next {
+    display: none;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .spot-card {
+    width: calc(100% - 40px);
+    margin: 0 8%;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-content {
+    padding: 4% 8%;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-content .spot-name {
+    font-size: 1rem;
+  }
+  #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-content .spot-info {
+    display: none;
+  }
+}

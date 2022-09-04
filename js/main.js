@@ -50,6 +50,52 @@ selectedAll.forEach((selected) => {
   });
 });
 
+
 /* Select - 오늘 날짜 default 값으로 넣기 */
 var dateControl = document.querySelector('input[type="date"]');
 dateControl.value = new Date().toISOString().slice(0, 10);
+
+
+/* #seoul-sopt 탭메뉴 */
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContentEls = document.querySelectorAll('[data-tab-content]');
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    tabContentEls.forEach((tabContent) => {
+      tabContent.classList.remove('active');
+    });
+    target.classList.add('active');
+
+    // 탭 버튼에 클래스 추가/제거
+    tabs.forEach(tab => tab.classList.remove('active'));
+    tab.classList.add('active');
+  });
+});
+
+
+/* #seoul-spot 슬라이드 */
+let swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  //loop: true,
+  //loopedSlides: 1,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 300,
+    modifier: 1,
+    slideShadows: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+    dragSize: 'auto',
+  },
+});

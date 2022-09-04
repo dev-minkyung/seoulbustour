@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/mainMediaquery.css">
+
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <script defer src="./js/main.js"></script>
 </head>
@@ -200,5 +205,277 @@
     </div>
   </main>
 
+  <!-- 투어 코스 -->
+  <section id="tour-course">
+    <div class="inner tour-container">
+      <h2>떠나볼까요?<br/>
+        서울 명소를 <span>버스투어</span>로 즐겨보세요.
+      </h2>
+      <ul class="tour-list">
+        <li>
+          <a href="javascript:void(0)">
+            <img class="tour-img" src="./images/tour_1.png" alt="투어코스1">
+            <div class="tour-info">
+              <p class="tour-name">전통 고궁 코스</p>
+              <p class="tour-text">
+                서울 도심의 고궁, 대형 전통시장 등을 경유하는 코스로
+                전통과 문화를 느낄 수 있는 인기 관광지로 안내합니다.
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:void(0)">
+            <img class="tour-img" src="./images/tour_2.png" alt="투어코스2">
+            <div class="tour-info">
+              <p class="tour-name">한강 잠실 코스</p>
+              <p class="tour-text">
+                서울 중심을 지나는 드넓은 한강과 123층 롯데월드타워 
+                등의 현대화된 서울 모습을 볼 수 있습니다.
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:void(0)">
+            <img class="tour-img" src="./images/tour_3.png" alt="투어코스3">
+            <div class="tour-info">
+              <p class="tour-name">스페셜 시즌 코스</p>
+              <p class="tour-text">
+                축제 또는 특별한 날에 한정적으로 운영되는 코스로
+                시즌별 색다른 경험을 쌓아보세요.
+              </p>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section id="seoul-spot">
+    <h2>가고 싶은 서울 명소 찾아보세요!</h2>
+    <div class="seoul-spot-content">
+      <div class="tabs">
+        <div class="tab active" data-tab-target="#tab1">
+          <img src="./images/seoul-spot/tabs/tab1.png" alt="고궁">
+          <p class="tab-name">고궁</p>
+        </div>
+        <div class="tab" data-tab-target="#tab2">
+          <img src="./images/seoul-spot/tabs/tab2.png" alt="랜드마크">
+          <p class="tab-name">랜드마크</p>
+        </div>
+        <div class="tab" data-tab-target="#tab3">
+          <img src="./images/seoul-spot/tabs/tab3.png" alt="역사적장소">
+          <p class="tab-name">역사적 장소</p>
+        </div>
+        <div class="tab" data-tab-target="#tab4">
+          <img src="./images/seoul-spot/tabs/tab4.png" alt="전통시장">
+          <p class="tab-name">전통시장</p>
+        </div>
+        <div class="tab" data-tab-target="#tab5">
+          <img src="./images/seoul-spot/tabs/tab5.png" alt="박물관/미술관">
+          <p class="tab-name">박물관/미술관</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- seoul spot 1 -->
+        <div id="tab1" data-tab-content class="spot active">
+          <div class="swiper spot-slide mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/고궁/덕수궁.jpg" alt="덕수궁">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">덕수궁</p>
+                  <p class="spot-info">덕수궁은 1897년에 선포된 황제국, 대한제국의 황궁으로 옛 이름은 경운궁입니다.</p>
+                </div>
+              </div>
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/고궁/경복궁.jpg" alt="경복궁">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">경복궁</p>
+                  <p class="spot-info">경복궁은 1395년 태조 이성계가 창건한 조선 왕조 제일의 법궁입니다.</p>
+                </div>
+              </div>
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/고궁/광화문.jpg" alt="광화문">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">광화문</p>
+                  <p class="spot-info">광화문은 1395년에 세워졌으며 경복궁의 남쪽에 있는 정문이다. ‘임금의 큰 덕(德)이 온 나라를 비춘다’는 의미이다.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div><!-- //swiper -->
+        </div>
+
+        <!-- seoul spot 2 -->
+        <div id="tab2" data-tab-content class="spot">
+          <div class="swiper spot-slide mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/랜드마크/N서울타워.jpg" alt="N서울타워">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">N서울타워</p>
+                  <p class="spot-info">남산 정상 부근에 위치한 전파 송출 및 관광용 타워로 전망대에서 서울 시내 전역을 내려다볼 수 있다.</p>
+                </div>
+              </div>
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/랜드마크/롯데타워.jpg" alt="롯데타워">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">롯데월드타워</p>
+                  <p class="spot-info">국내 최초로 100층을 돌파하는 초고층 건물이 되었으며 세계/아시아에서 5번째로 높은 건물이다.</p>
+                </div>
+              </div>
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/랜드마크/반포대교 세빛둥둥섬.jpg" alt="세빛둥둥섬">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">세빛둥둥섬</p>
+                  <p class="spot-info">서울의 중심인 한강에 색다른 수면문화를 즐길수 있는 랜드마크로 조성된 복합 문화 공간이다.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div><!-- //swiper -->
+        </div>
+        
+        <!-- seoul spot 3 -->
+        <div id="tab3" data-tab-content class="spot">
+          <div class="swiper spot-slide mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/역사적장소/명동성당.jpg" alt="명동성당">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">명동성당</p>
+                  <p class="spot-info">한반도에서 처음으로 지어진 대규모의 고딕 양식 천주교 성당이자, 한국 최초의 본당이다.</p>
+                </div>
+              </div>
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/역사적장소/북촌한옥마을.jpg" alt="북촌한옥마을">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">북촌한옥마을</p>
+                  <p class="spot-info">종로구에 위치한 한옥마을로 많은 사적, 문화재, 민속자료가 있어 도심 속의 박물관이라 불리기도 한다.</p>
+                </div>
+              </div>
+
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div><!-- //swiper -->
+        </div>
+
+        <!-- seoul spot 4 -->
+        <div id="tab4" data-tab-content class="spot">
+          <div class="swiper spot-slide mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/전통시장/광장시장.jpg" alt="광장시장">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">광장시장</p>
+                  <p class="spot-info">광장시장은 서울 종로구에 위치한 100여년의 역사를 지닌 대한민국 최초의 상설시장이다.</p>
+                </div>
+              </div>
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/전통시장/망원시장.jpg" alt="망원시장">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">망원시장</p>
+                  <p class="spot-info">망원시장은 서울 마포구에 위치한 전통시장으로 농수산물, 분식, 생활잡화까지 다양한 제품을 판매하고 있다.</p>
+                </div>
+              </div>
+
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div><!-- //swiper -->
+        </div>
+
+        <!-- seoul spot 5 -->
+        <div id="tab5" data-tab-content class="spot">
+          <div class="swiper spot-slide mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/박물관:미술관/DDP.jpg" alt="DDP">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">동대문디자인플라자</p>
+                  <p class="spot-info">서울 중구에 위치한 복합 문화 공간으로 크게 5개의 시설과 15개 공간으로 구분되어 있다.</p>
+                </div>
+              </div>
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/박물관:미술관/전쟁기념관.jpg" alt="전쟁기념관">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">전쟁기념관</p>
+                  <p class="spot-info">전쟁에서 국가를 지킨 선열들의 자료들을 시대별로 구분/전시되어 있다.</p>
+                </div>
+              </div>
+
+              <div class="spot-card swiper-slide">
+                <div class="spot-img">
+                  <img src="./images/seoul-spot/박물관:미술관/국립현대미술관.jpg" alt="국립현대미술관">
+                </div>
+                <div class="spot-content">
+                  <p class="spot-name">국립현대미술관</p>
+                  <p class="spot-info">국립현대미술관은 개관 반세기의 역사를 자랑하는 국내 유일의 국가현대미술관입니다.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div><!-- //swiper -->
+        </div>
+
+      </div>
+    </div>
+  </section>
 </body>
 </html>
