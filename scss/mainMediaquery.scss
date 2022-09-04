@@ -41,7 +41,7 @@
     }
   }
 
-  /* 서울 투어 명소 영역 */
+  /* 서울 투어 명소 영역 -tablet */
   #seoul-spot {
     .seoul-spot-content {
       .content {
@@ -64,7 +64,19 @@
         }
       }
     }
+  }
 
+  /* 퀵 아이콘 메뉴 -tablet */
+  #quick-menu {
+    .quick-menu-container {
+      .icon-menu {
+        flex-wrap: wrap;
+        gap: 16px;
+        li {
+          flex-basis: 40%;
+        }
+      }
+    }
   }
 }
 

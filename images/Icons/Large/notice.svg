@@ -1,0 +1,25 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1165_2486)">
+<rect opacity="0.6" x="6" y="6" width="36" height="36" rx="2" stroke="#A5A5A5" stroke-width="0.04"/>
+<rect opacity="0.6" x="4" y="4" width="40" height="40" rx="10" stroke="#A5A5A5" stroke-width="0.04"/>
+<rect opacity="0.6" x="14" y="14" width="20" height="20" rx="10" stroke="#A5A5A5" stroke-width="0.04"/>
+<rect opacity="0.6" x="4" y="8" width="40" height="32" rx="2" stroke="#A5A5A5" stroke-width="0.04"/>
+<rect opacity="0.6" x="8" y="44" width="40" height="32" rx="2" transform="rotate(-90 8 44)" stroke="#A5A5A5" stroke-width="0.04"/>
+<path opacity="0.6" d="M48 0L0 48" stroke="#A5A5A5" stroke-width="0.04"/>
+<path opacity="0.6" d="M0 0L48 48" stroke="#A5A5A5" stroke-width="0.04"/>
+<path d="M14 43H38" stroke="black" stroke-width="2" stroke-linecap="square"/>
+<circle cx="25" cy="15" r="2" fill="#FABC1D"/>
+<rect x="23" y="18" width="4" height="10" fill="#FABC1D"/>
+<rect x="22" y="18" width="4" height="1" fill="#FABC1D"/>
+<rect x="22" y="28" width="6" height="1" fill="#FABC1D"/>
+<path d="M13 5H37C38.1046 5 39 5.89543 39 7V37H13V5Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M13 37C11.9391 37 10.9217 37.3161 10.1716 37.8787C9.42143 38.4413 9 39.2044 9 40C9 40.7956 9.42143 41.5587 10.1716 42.1213C10.9217 42.6839 11.9391 43 13 43" stroke="black" stroke-width="2"/>
+<path d="M39 37C38.4696 37 37.9609 37.3161 37.5858 37.8787C37.2107 38.4413 37 39.2044 37 40C37 40.7956 37.2107 41.5587 37.5858 42.1213C37.9609 42.6839 38.4696 43 39 43" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 5C11.9391 5 10.9217 5.31607 10.1716 5.87868C9.42143 6.44129 9 7.20435 9 8L9 40" stroke="black" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_1165_2486">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

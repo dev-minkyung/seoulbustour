@@ -34,7 +34,7 @@
   #tour-course .tour-container .tour-list {
     gap: 16px;
   }
-  /* 서울 투어 명소 영역 */
+  /* 서울 투어 명소 영역 -tablet */
   #seoul-spot .seoul-spot-content .content .spot .swiper-horizontal .swiper-scrollbar {
     width: 78% !important;
   }
@@ -47,6 +47,14 @@
   #seoul-spot .seoul-spot-content .content .spot .spot-card {
     width: 80%;
     margin: 0 8%;
+  }
+  /* 퀵 아이콘 메뉴 -tablet */
+  #quick-menu .quick-menu-container .icon-menu {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #quick-menu .quick-menu-container .icon-menu li {
+    flex-basis: 40%;
   }
 }
 @media (max-width: 768px) {
