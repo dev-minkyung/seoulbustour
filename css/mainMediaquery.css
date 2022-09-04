@@ -154,7 +154,7 @@
   #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-content .spot-info {
     display: none;
   }
-  /* 퀵 아이콘 메뉴 -tablet */
+  /* 퀵 아이콘 메뉴 - mobile */
   #quick-menu .quick-menu-container .icon-menu li {
     flex-basis: 40%;
   }

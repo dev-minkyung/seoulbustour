@@ -301,6 +301,7 @@ main .tour-search-bar .btn-tour-search .search-text {
   border: 1px solid #F8F8F8;
   box-sizing: border-box;
   transition: all 0.4s;
+  font-weight: bold;
 }
 #quick-menu .quick-menu-container .icon-menu li .menu-title {
   padding-bottom: 42px;
