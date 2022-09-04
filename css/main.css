@@ -221,6 +221,7 @@ main .tour-search-bar .btn-tour-search .search-text {
 }
 #seoul-spot .seoul-spot-content .content .spot .swiper-horizontal .swiper-scrollbar {
   width: 58% !important;
+  height: 2px;
   bottom: 0;
   left: 50% !important;
   transform: translateX(-50%) !important;

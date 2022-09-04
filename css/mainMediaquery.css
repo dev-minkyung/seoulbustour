@@ -122,6 +122,9 @@
     width: 0;
     height: 0;
   }
+  #seoul-spot .seoul-spot-content .content .spot .swiper-wrapper {
+    padding: 24px 0 20px;
+  }
   #seoul-spot .seoul-spot-content .content .spot .swiper-wrapper .swiper-slide:not(.swiper-slide-active) {
     opacity: 60%;
     filter: blur(2px);
