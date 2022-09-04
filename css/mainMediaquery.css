@@ -53,9 +53,6 @@
     flex-wrap: wrap;
     gap: 16px;
   }
-  #quick-menu .quick-menu-container .icon-menu li {
-    flex-basis: 40%;
-  }
 }
 @media (max-width: 768px) {
   /* main-view - mobile */
@@ -156,5 +153,9 @@
   }
   #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-content .spot-info {
     display: none;
+  }
+  /* 퀵 아이콘 메뉴 -tablet */
+  #quick-menu .quick-menu-container .icon-menu li {
+    flex-basis: 40%;
   }
 }
