@@ -12,7 +12,6 @@ main .main-view {
   width: 100%;
   height: 700px;
   overflow: hidden;
-  z-index: -1;
 }
 main .main-view .bg-main-view img {
   width: auto;
@@ -47,6 +46,7 @@ main .tour-search-bar {
   transform: translate(-50%, 50%);
   width: 95%;
   max-width: 1056px;
+  z-index: 1;
   padding: 32px;
   border-radius: 8px;
   box-sizing: border-box;
