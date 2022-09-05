@@ -142,9 +142,15 @@ main .tour-search-bar .btn-tour-search .search-text {
 }
 #tour-course .tour-container .tour-list li .tour-img {
   width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  -o-object-fit: cover;
+  /*
+  width: 100%;
   height: 260px;
   object-fit: cover;
   -o-object-fit: cover;
+  */
 }
 #tour-course .tour-container .tour-list li .tour-info {
   display: flex;
@@ -246,13 +252,12 @@ main .tour-search-bar .btn-tour-search .search-text {
 }
 #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-img {
   width: 100%;
-  height: ratio(100%, 16/9);
 }
 #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-img img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   -o-object-fit: cover;
-     object-fit: cover;
 }
 #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-content {
   position: absolute;
@@ -438,24 +443,12 @@ main .tour-search-bar .btn-tour-search .search-text {
 #tour-review .best-review .review-img {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-#tour-review .best-review .review-img::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0;
-  padding-top: 56.25%;
-  /* 16:9  비율의 영역을 만들기 */
 }
 #tour-review .best-review .review-img img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 8px;
 }
 #tour-review .btn-all {
