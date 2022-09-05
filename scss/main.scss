@@ -465,6 +465,8 @@ main {
       .review-content {
         font-size: .875rem;
         color: $gray700;
+        height: 64px;
+        overflow: hidden;
       }
       .review-tag {
         display: flex;
