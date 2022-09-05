@@ -1,5 +1,5 @@
-/* Tablet */
-@media (max-width: 1000px) { 
+/* -------- Tablet -------- */
+@media (max-width: 1023px) { 
   /* main-view - tablet */
   main {
     height: calc(700px + 204px);
@@ -66,18 +66,45 @@
     }
   }
 
+  /* 투어 후기 - tablet */
+  #tour-review {
+    .best-review {
+      > li {
+        &:last-child {
+          display:none;
+        }
+      }
+    }
+  }
+
+
   /* 퀵 아이콘 메뉴 -tablet */
   #quick-menu {
     .quick-menu-container {
       .icon-menu {
         flex-wrap: wrap;
         gap: 16px;
-
+      }
+      .notice {
+        padding: 20px 32px;
+        .btn-more {
+          flex-basis: 24px;
+          span {
+            display: none;
+          }
+          img {
+            width: 24px;
+            height: 24px;
+            
+          }
+        }
       }
     }
   }
 }
 
+
+/* -------- mobile -------- */
 @media (max-width: 768px) {
   /* main-view - mobile */
   main {
@@ -139,56 +166,26 @@
 
   /* 서울 투어 명소 영역 - mobile*/
   #seoul-spot {
-    padding: 60px 0;
     .seoul-spot-content {
       .tabs {
-        justify-content: flex-start;
         gap: 6px;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-
         .tab {
           min-width: 80px;
           img {
             width: 65px;
             height: 65px;
           }
-
-          &:first-child {
-            margin-left: 20px;
-          }
-          &:last-child {
-            margin-right: 20px;
-          }
-        }
-
-        &::-webkit-scrollbar {
-          width: 0;
-          height: 0;
         }
       }
       .content {
         .spot {
-          .swiper-wrapper {
-            padding: 24px 0 20px;
-            .swiper-slide:not(.swiper-slide-active) {
-              opacity: 60%;
-              filter: blur(2px);
-            }
-          }
           // swiper 인라인스타일 제어
-          .swiper-horizontal .swiper-scrollbar{
-            width: calc(100% - 46px) !important;
-          }
           .swiper-button-prev,
           .swiper-button-next {
             display: none;
           }
 
           .spot-card {
-            width: calc(100% - 40px);
-            margin: 0 8%;
-
             .spot-content {
               padding: 4% 8%;
 
@@ -214,6 +211,104 @@
           flex-basis: 40%;
         }
       }
+      .notice {
+        gap : 16px;
+
+        padding: 16px 20px;
+        font-size: 0.875rem;
+        line-height: 24px;
+
+        .swiper-slide {
+          .notice-list-title {
+            flex-basis: 100%;
+            font-weight: 400;
+            //vertical-align: middle;
+          }
+          .notice-list-content {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+
+/* -------- mobile - min -------- */
+@media (max-width: 460px) {
+
+  /* 서울 투어 명소 영역 - mobile*/
+  #seoul-spot {
+    padding: 60px 0;
+    .seoul-spot-content {
+      .tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+
+        .tab {
+          &:first-child { margin-left: 20px; }
+          &:last-child { margin-right: 20px; }
+        }
+
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+      }
+      .content {
+        .spot {
+          .swiper-wrapper {
+            padding: 24px 0 20px;
+            .swiper-slide:not(.swiper-slide-active) {
+              opacity: 60%;
+              filter: blur(2px);
+            }
+          }
+          // swiper 인라인스타일 제어
+          .swiper-horizontal .swiper-scrollbar{
+            width: calc(100% - 46px) !important;
+          }
+
+          .spot-card {
+            width: calc(100% - 40px);
+            margin: 0 8%;
+          }
+        }
+      }
+    }
+  }
+
+  /* 투어 후기 - tablet */
+  #tour-review {
+    padding: 60px 0;
+    .best-review {
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      gap: 0;
+
+      > li {
+        min-width: 80vw;
+        flex: 1 1 auto;
+        box-shadow: none;
+        
+        &:first-child {
+          margin-left: 40px;
+        }
+        &:last-child {
+          display: inline-block;
+          margin-right: 40px;
+        }
+      }
+      -webkit-overflow-scrolling: touch;
+      /*
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+      */
     }
   }
 }

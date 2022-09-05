@@ -328,7 +328,7 @@ footer .footer-container .footer-menu-list .footer-menu li a:hover {
 }
 
 /* Tablet */
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   header .header_container .ic-main-menu {
     display: block;
   }

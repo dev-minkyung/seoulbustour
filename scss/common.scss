@@ -146,6 +146,7 @@ h2 {
   background-color: $brand_color;
 }
 
+
 /* Select */
 .select-box {
   min-width: 100px;
@@ -360,7 +361,7 @@ footer {
 
 
 /* Tablet */
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   header {
     .header_container {
       .ic-main-menu {

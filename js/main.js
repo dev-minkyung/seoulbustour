@@ -75,10 +75,8 @@ tabs.forEach((tab) => {
 
 
 /* #seoul-spot 슬라이드 */
-let swiper = new Swiper(".mySwiper", {
+new Swiper(".spot .swiper", {
   effect: "coverflow",
-  //loop: true,
-  //loopedSlides: 1,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
@@ -100,6 +98,12 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
+new Swiper(".notice .swiper", {
+  direction: 'vertical',
+  slidesPerView: 1,
+  autoplay: true,
+  loop: true
+});
 
 /* footer 올해 연도 */
 const thisYear = document.querySelector('.this-year');
