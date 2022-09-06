@@ -122,24 +122,24 @@ h2 {
 /* 버튼 스타일*/
 .btn {
   padding: 8px 16px;
-  border: 1px solid $gray500;
+  border: 1px solid $gray400;
   border-radius: $radius-4;
   box-sizing: border-box;
   text-align: center;
   vertical-align: center;
-  color: $black;
+  color: $gray700;
   transition: all .6s;
 }
 .btn.btn--reverse {
   background: $gray700;
   color: $white;
+  border: none;
   transition: all .4s;
 }
 
-/*  버튼 Hover 스타일*/
 .btn:hover {
-  border-color: $brand_color;
-  color: $brand_color;
+  border-color: $black;
+  color: $black;
 }
 .btn.btn--reverse:hover {
   color: $white;

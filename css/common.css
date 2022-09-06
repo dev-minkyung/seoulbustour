@@ -118,25 +118,25 @@ h2 {
 /* 버튼 스타일*/
 .btn {
   padding: 8px 16px;
-  border: 1px solid #6A6A6A;
+  border: 1px solid #9A9A9A;
   border-radius: 4px;
   box-sizing: border-box;
   text-align: center;
   vertical-align: center;
-  color: #191919;
+  color: #333333;
   transition: all 0.6s;
 }
 
 .btn.btn--reverse {
   background: #333333;
   color: #ffffff;
+  border: none;
   transition: all 0.4s;
 }
 
-/*  버튼 Hover 스타일*/
 .btn:hover {
-  border-color: #FABC1D;
-  color: #FABC1D;
+  border-color: #191919;
+  color: #191919;
 }
 
 .btn.btn--reverse:hover {
