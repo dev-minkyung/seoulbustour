@@ -190,9 +190,12 @@
   #tour-service .tour-service-container .service-list li:nth-child(4) {
     order: 3;
   }
+  #tour-service .tour-service-container .service-list li .service-info .service-title {
+    font-size: 1rem;
+  }
   #tour-service .tour-service-container .service-list li .service-icon {
     width: 120px;
-    height: 100px;
+    height: auto;
   }
   /* 퀵 아이콘 메뉴 - mobile */
   #quick-menu .quick-menu-container .icon-menu li {
