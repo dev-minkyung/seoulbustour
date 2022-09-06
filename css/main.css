@@ -3,6 +3,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@-webkit-keyframes mainPlay {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes mainPlay {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes textUp {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes textUp {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 main {
   width: 100%;
   height: 769px;
@@ -13,14 +49,18 @@ main .main-view {
   height: 700px;
   overflow: hidden;
 }
-main .main-view .bg-main-view img {
-  width: auto;
-  height: 100%;
+main .main-view .bg-main-view {
   margin: 0 auto;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+main .main-view .bg-main-view img {
+  width: auto;
+  height: 100%;
+  -webkit-animation: mainPlay 1.5s linear 1;
+          animation: mainPlay 1.5s linear 1;
 }
 main .main-view .main-view-text {
   position: absolute;
@@ -33,11 +73,29 @@ main .main-view .main-view-text {
   text-transform: uppercase;
   text-align: center;
   line-height: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+main .main-view .main-view-text p {
+  opacity: 0;
+  -webkit-animation: textUp 1.5s ease-in-out 1;
+          animation: textUp 1.5s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+main .main-view .main-view-text p:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+main .main-view .main-view-text p:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 main .main-view .main-view-text .point-text {
   font-family: "Permanent Marker", cursive;
   color: #FABC1D;
   transform: translateY(-10px);
+  z-index: 1;
 }
 main .tour-search-bar {
   position: absolute;

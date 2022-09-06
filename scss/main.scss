@@ -1,5 +1,14 @@
 @import './style.scss';
 
+@keyframes mainPlay {
+  0% { transform: scale(1.2);}
+  100% { transform: scale(1); }
+}
+@keyframes textUp {
+  0% { transform: translateY(50%); opacity: 0;}
+  100% { transform: translateY(0); opacity: 1;}
+}
+
 main {
   width: 100%;
   height: calc(700px + 69px);
@@ -11,14 +20,15 @@ main {
     overflow: hidden;
 
     .bg-main-view {
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       img {
         width: auto;
         height: 100%;
-        margin: 0 auto;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        animation: mainPlay 1.5s linear 1;
       }
     }
     .main-view-text {
@@ -34,10 +44,22 @@ main {
       text-align: center;
       line-height: 0.7;
 
+      display: flex;
+      flex-direction: column;
+
+      p {
+        opacity: 0;
+        animation: textUp 1.5s ease-in-out 1;
+        animation-fill-mode: forwards;
+        &:nth-child(2) { animation-delay: .5s; }
+        &:nth-child(3) { animation-delay: 1s; }
+      }
+
       .point-text {
         font-family: $Permanent_Marker;
         color: $brand_color;
         transform: translateY(-10px);
+        z-index: 1;
       }
     }
   }
