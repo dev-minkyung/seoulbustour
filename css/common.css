@@ -172,6 +172,7 @@ h2 {
   order: 1;
   position: absolute;
   top: 48px;
+  z-index: 10;
 }
 .options-container.active {
   max-height: 240px;
@@ -329,6 +330,10 @@ footer .footer-container .footer-menu-list .footer-menu li a:hover {
 
 /* Tablet */
 @media (max-width: 1023px) {
+  /* 폰트 */
+  h2 {
+    font-size: 1.75rem;
+  }
   header .header_container .ic-main-menu {
     display: block;
   }

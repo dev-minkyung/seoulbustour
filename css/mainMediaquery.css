@@ -48,6 +48,22 @@
     width: 80%;
     margin: 0 8%;
   }
+  /* 투어 서비스 - tablet */
+  #tour-service .tour-service-container {
+    width: 95%;
+  }
+  #tour-service .tour-service-container .service-list {
+    width: 100%;
+  }
+  #tour-service .tour-service-container .service-list li {
+    width: 100%;
+  }
+  #tour-service .tour-service-container .service-list .service-info .service-title {
+    font-size: 1rem;
+  }
+  #tour-service .tour-service-container .service-list .service-info .service-content {
+    font-size: 0.875rem;
+  }
   /* 투어 후기 - tablet */
   #tour-review .best-review > li:last-child {
     display: none;
@@ -141,6 +157,34 @@
   }
   #seoul-spot .seoul-spot-content .content .spot .spot-card .spot-content .spot-info {
     display: none;
+  }
+  /* 투어 서비스 - mobile */
+  #tour-service .tour-service-container h2 {
+    text-align: center;
+  }
+  #tour-service .tour-service-container .service-list {
+    grid-template-columns: 100%;
+    gap: 16px;
+    margin-top: 0;
+    justify-items: center;
+  }
+  #tour-service .tour-service-container .service-list li {
+    max-width: 450px;
+  }
+  #tour-service .tour-service-container .service-list li:nth-child(even) {
+    transform: none;
+  }
+  #tour-service .tour-service-container .service-list li:nth-child(1) {
+    order: 2;
+  }
+  #tour-service .tour-service-container .service-list li:nth-child(2) {
+    order: 1;
+  }
+  #tour-service .tour-service-container .service-list li:nth-child(3) {
+    order: 4;
+  }
+  #tour-service .tour-service-container .service-list li:nth-child(4) {
+    order: 3;
   }
   /* 퀵 아이콘 메뉴 - mobile */
   #quick-menu .quick-menu-container .icon-menu li {
