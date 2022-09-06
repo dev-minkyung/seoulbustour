@@ -159,6 +159,9 @@
     display: none;
   }
   /* 투어 서비스 - mobile */
+  #tour-service .tour-service-container {
+    width: 100%;
+  }
   #tour-service .tour-service-container h2 {
     text-align: center;
   }
@@ -170,6 +173,7 @@
   }
   #tour-service .tour-service-container .service-list li {
     max-width: 450px;
+    padding: 32px 24px 24px;
   }
   #tour-service .tour-service-container .service-list li:nth-child(even) {
     transform: none;
