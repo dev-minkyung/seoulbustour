@@ -112,7 +112,7 @@
     top: 30%;
   }
   main .main-view .main-view-text .point-text {
-    transform: translateY(-5px);
+    margin-top: -6px;
   }
   main .tour-search-bar {
     width: calc(100% - 40px);

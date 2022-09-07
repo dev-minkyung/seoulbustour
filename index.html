@@ -15,6 +15,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+
+  <!-- gsap cdn / scrollTrigger cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+  
   <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -57,7 +62,7 @@
     <div class="inner">
       <form class="tour-search-bar">
         <!-- 투어 코스 선택 -->
-        <fieldset class="tour-course">
+        <fieldset class="select-course">
           <legend>투어코스</legend>
           <div class="select-box">
             <ul class="options-container">
@@ -80,13 +85,13 @@
         </fieldset>
   
         <!-- 투어 일정 선택-->
-        <fieldset class="tour-date">
+        <fieldset class="select-date">
           <legend>투어일정</legend>
           <input type="date" class="tour-date-selected selected"/>
         </fieldset>
   
         <!-- 투어 인원 선택 -->
-        <fieldset class="tourist-number">
+        <fieldset class="select-tourist-number">
           <div class="adult tourist">
             <legend>성인</legend>
             <div class="select-box">
@@ -211,7 +216,7 @@
         서울 명소를 <span>버스투어</span>로 즐겨보세요.
       </h2>
       <ul class="tour-list">
-        <li>
+        <li class="course">
           <a href="javascript:void(0)">
             <img class="tour-img" src="./images/tour_1.png" alt="투어코스1">
             <div class="tour-info">
@@ -224,7 +229,7 @@
           </a>
         </li>
 
-        <li>
+        <li class="course">
           <a href="javascript:void(0)">
             <img class="tour-img" src="./images/tour_2.png" alt="투어코스2">
             <div class="tour-info">
@@ -237,7 +242,7 @@
           </a>
         </li>
 
-        <li>
+        <li class="course">
           <a href="javascript:void(0)">
             <img class="tour-img" src="./images/tour_3.png" alt="투어코스3">
             <div class="tour-info">
@@ -484,7 +489,7 @@
       <h2>서울버스투어가 제공하는<br/>다양한 서비스를 받아보세요.</h2>
       <ul class="service-list">
 
-        <li>
+        <li class="service">
           <div class="service-info">
             <p class="service-title">6개국 오디오 가이드</p>
             <p class="service-content">
@@ -495,7 +500,7 @@
           <img class="service-icon" src="./images/Icons-service/audio.png" alt="audio">
         </li>
 
-        <li>
+        <li class="service">
           <div class="service-info">
             <p class="service-title">1일 자유 승차권</p>
             <p class="service-content">
@@ -506,15 +511,15 @@
           <img class="service-icon" src="./images/Icons-service/1day-ticket.png" alt="1day bus ticket">
         </li>
 
-        <li>
+        <li class="service">
           <div class="service-info">
             <p class="service-title">무료 와이파이</p>
             <p class="service-content">버스 내에서 무료로 와이파이를 사용할수 있습니다.</p>
           </div>
           <img class="service-icon" src="./images/Icons-service/wifi.png" alt="wifi">
         </li>
-        
-        <li>
+
+        <li class="service">
           <div class="service-info">
             <p class="service-title">제휴사 할인</p>
             <p class="service-content">다양한 혜택을 제공하는 제휴할인을 확인해보세요.</p>

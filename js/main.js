@@ -108,3 +108,24 @@ new Swiper(".notice .swiper", {
 /* footer 올해 연도 */
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
+
+
+/* scroll 이벤트 */
+
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline();
+
+ScrollTrigger.create({
+  trigger: ".tour-list",
+  start: "top 90%",
+  toggleClass: { targets: ".course", className: "course-act"},
+  once: true,
+});
+
+ScrollTrigger.create({
+  trigger: "#tour-service h2",
+  start: "top 90%",
+  toggleClass: { targets: ".service", className: "service-act"},
+  once: true,
+});
