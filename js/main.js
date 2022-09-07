@@ -87,15 +87,6 @@ new Swiper(".spot .swiper", {
     modifier: 1,
     slideShadows: false,
   },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-    dragSize: 'auto',
-  },
 });
 
 new Swiper(".notice .swiper", {
@@ -111,10 +102,7 @@ thisYear.textContent = new Date().getFullYear();
 
 
 /* scroll 이벤트 */
-
 gsap.registerPlugin(ScrollTrigger);
-
-const tl = gsap.timeline();
 
 ScrollTrigger.create({
   trigger: ".tour-list",
@@ -128,4 +116,5 @@ ScrollTrigger.create({
   start: "top 90%",
   toggleClass: { targets: ".service", className: "service-act"},
   once: true,
+  scrub: true,
 });
