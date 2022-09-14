@@ -219,19 +219,6 @@ main .tour-search-bar .btn-tour-search .search-text {
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
   transition: all 0.4s;
-  opacity: 0;
-  transform: translateY(50%);
-  transition: all 1s;
-}
-#tour-course .tour-container .tour-list li:nth-child(2) {
-  transform: translateY(80%);
-}
-#tour-course .tour-container .tour-list li:nth-child(3) {
-  transform: translateY(100%);
-}
-#tour-course .tour-container .tour-list li.course-act {
-  opacity: 1;
-  transform: translateY(0);
 }
 #tour-course .tour-container .tour-list li .tour-img {
   width: 100%;
@@ -390,16 +377,9 @@ main .tour-search-bar .btn-tour-search .search-text {
   padding: 40px 32px 32px;
   box-sizing: border-box;
   background: #F8F8F8;
-  opacity: 0;
-  margin-top: 100px;
-  transition: all 1s;
 }
 #tour-service .tour-service-container .service-list li:nth-child(even) {
   transform: translateY(-70%);
-}
-#tour-service .tour-service-container .service-list li.service-act {
-  opacity: 1;
-  margin-top: 0;
 }
 #tour-service .tour-service-container .service-list li .service-info .service-title {
   font-size: 1.25rem;
