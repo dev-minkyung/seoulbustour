@@ -343,6 +343,7 @@
   /* 투어 후기 - mobile-min */
   #tour-review {
     .best-review {
+      width: calc(100% - 40px);
       overflow: hidden;
       overscroll-behavior: none;
 
