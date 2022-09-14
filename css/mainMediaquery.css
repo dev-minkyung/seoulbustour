@@ -254,34 +254,31 @@
     width: calc(100% - 40px);
     margin: 0 8%;
   }
-  /* 투어 후기 - mobile-min */
+  /* 투어 후기 - mobile-min 
   #tour-review {
     padding: 60px 0;
-  }
-  #tour-review .best-review {
-    width: 100%;
-    overflow-y: hidden;
-    overflow-x: auto;
-    gap: 0;
-    -webkit-overflow-scrolling: none;
-    -ms-scroll-chaining: none;
-        overscroll-behavior: none;
-    /* 스크롤바 안보이게 스타일
-    &::-webkit-scrollbar {
-      width: 0;
+    .best-review {
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      gap: 0;
+
+      > li {
+        min-width: 80vw;
+        flex: 1 1 auto;
+        box-shadow: none;
+
+        &:first-child {
+          margin-left: 40px;
+        }
+        &:last-child {
+          display: inline-block;
+          margin-right: 40px;
+        }
+      }
+      -webkit-overflow-scrolling: none;
+      overscroll-behavior: none;
     }
-    */
   }
-  #tour-review .best-review > li {
-    min-width: 80vw;
-    flex: 1 1 auto;
-    box-shadow: none;
-  }
-  #tour-review .best-review > li:first-child {
-    margin-left: 40px;
-  }
-  #tour-review .best-review > li:last-child {
-    display: inline-block;
-    margin-right: 40px;
-  }
+  */
 }
