@@ -255,9 +255,8 @@
     margin: 0 8%;
   }
   /* 투어 후기 - mobile-min */
-  #tour-review .best-review {
-    width: calc(100% - 40px);
-    overflow-x: hidden;
+  #tour-review {
+    box-sizing: border-box;
   }
   #tour-review .best-review > li {
     display: none;

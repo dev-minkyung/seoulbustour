@@ -342,10 +342,8 @@
 
   /* 투어 후기 - mobile-min */
   #tour-review {
+    box-sizing: border-box;
     .best-review {
-      width: calc(100% - 40px);
-      overflow-x: hidden;
-
       > li {
         display: none;
         &:first-child {
