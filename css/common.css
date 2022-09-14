@@ -13,9 +13,8 @@ body {
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #191919;
-  overflow-y: hidden;
   -ms-scroll-chaining: none;
-      overscroll-behavior: none;
+      overscroll-behavior: contain;
 }
 
 section {
