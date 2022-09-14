@@ -218,7 +218,6 @@ main .tour-search-bar .btn-tour-search .search-text {
   overflow: hidden;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
-  transition: all 0.4s;
 }
 #tour-course .tour-container .tour-list li .tour-img {
   width: 100%;
