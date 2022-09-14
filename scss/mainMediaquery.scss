@@ -87,6 +87,18 @@
     }
   }
 
+  /* 투어 후기 - tablet */
+  #tour-review {
+    .best-review {
+      > li {
+        &:last-child {
+          display:none;
+        }
+      }
+    }
+  }
+
+
   /* 퀵 아이콘 메뉴 -tablet */
   #quick-menu {
     .quick-menu-container {
@@ -252,6 +264,18 @@
     }
   }
 
+  /* 투어 후기 - mobile */
+  #tour-review {
+    box-sizing: border-box;
+    .best-review {
+      > li {
+        display: none;
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+  }
 
   /* 퀵 아이콘 메뉴 - mobile */
   #quick-menu {
@@ -327,4 +351,34 @@
       }
     }
   }
+  
+  /* 투어 후기 - mobile-min 
+  #tour-review {
+    padding: 60px 0;
+    .best-review {
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      gap: 0;
+
+      -webkit-overflow-scrolling: none;
+      overscroll-behavior: none;
+      touch-action: pan-x;
+
+      > li {
+        min-width: 80vw;
+        flex: 1 1 auto;
+        box-shadow: none;
+        
+        &:first-child {
+          margin-left: 40px;
+        }
+        &:last-child {
+          display: inline-block;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+  */
 }

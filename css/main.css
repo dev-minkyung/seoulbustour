@@ -414,99 +414,90 @@ main .tour-search-bar .btn-tour-search .search-text {
   align-self: flex-end;
 }
 
-/* 투어 후기 
+/* 투어 후기 */
 #tour-review {
   background: #FFFBF0;
   padding: 100px 0;
-
-  .best-review {
-    width: calc(100% - 80px);
-    margin: 0 auto;
-    display: flex;
-    gap: 32px;
-
-    > li {
-      flex: 1 1 30%;
-      display: flex;
-      flex-direction: column;
-
-      padding: 32px;
-      border-radius: $radius-8;
-      box-sizing: border-box;
-      box-shadow: 2px 4px 10px rgba(#000, .08);
-      background: $white;
-    }
-
-    .review-card {
-      .review-title {
-        font-weight: 600;
-      }
-      .review-content {
-        font-size: .875rem;
-        color: $gray700;
-        height: 64px;
-        overflow: hidden;
-      }
-      .review-tag {
-        display: flex;
-        gap: 6px;
-        font-size: .75rem;
-        color: $brand-color;
-        padding: 12px 0 16px;
-
-        > li {
-          width: auto;
-          padding: 4px 8px;
-          border: 1px solid $brand-color;
-          border-radius: 15px;
-          box-sizing: border-box;
-          font-weight: 500;
-        }
-      }
-      .review-writer {
-        font-size: .75rem;
-        color: $gray600;
-        display: flex;
-        margin-bottom: 4px;
-
-        .writer {
-          &::after {
-            content: '';
-            display: inline-block;
-            width: 2px;
-            height: 2px;
-            border-radius: 50%;
-            margin: 6px;
-            background: $gray600;
-            vertical-align: middle;
-          }
-        }
-      }
-    }
-
-    .review-img {
-      width: 100%;
-      height: 100%;
-      img {
-        width: 100%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        -o-object-fit: cover;
-        border-radius: $radius-8;
-      }
-    }
-  }
-  .btn-all {
-    width: max-content;
-    height: 100%;
-    margin: 40px auto 0;
-    .btn {
-      padding: 12px 24px;
-      display: inline-block;
-    }
-  }
 }
-*/
+#tour-review .best-review {
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+}
+#tour-review .best-review > li {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+}
+#tour-review .best-review .review-card .review-title {
+  font-weight: 600;
+}
+#tour-review .best-review .review-card .review-content {
+  font-size: 0.875rem;
+  color: #333333;
+  height: 64px;
+  overflow: hidden;
+}
+#tour-review .best-review .review-card .review-tag {
+  display: flex;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: #FABC1D;
+  padding: 12px 0 16px;
+}
+#tour-review .best-review .review-card .review-tag > li {
+  width: auto;
+  padding: 4px 8px;
+  border: 1px solid #FABC1D;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+#tour-review .best-review .review-card .review-writer {
+  font-size: 0.75rem;
+  color: #555555;
+  display: flex;
+  margin-bottom: 4px;
+}
+#tour-review .best-review .review-card .review-writer .writer::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  margin: 6px;
+  background: #555555;
+  vertical-align: middle;
+}
+#tour-review .best-review .review-img {
+  width: 100%;
+  height: 100%;
+}
+#tour-review .best-review .review-img img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  -o-object-fit: cover;
+  border-radius: 8px;
+}
+#tour-review .btn-all {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  margin: 40px auto 0;
+}
+#tour-review .btn-all .btn {
+  padding: 12px 24px;
+  display: inline-block;
+}
+
 /* 퀵 아이콘 메뉴 */
 #quick-menu .quick-menu-container .icon-menu {
   display: flex;
