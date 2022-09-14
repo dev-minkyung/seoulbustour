@@ -122,7 +122,7 @@ ScrollTrigger.create({
 */
 
 /* 스크롤 이벤트 */
-const spyEls = document.querySelectorAll('section.scroll-spy');
+const spyEls = document.querySelectorAll('.scroll-spy');
 spyEls.forEach(function (spyEl) {
   new ScrollMagic
     .Scene({
