@@ -64,10 +64,6 @@
   #tour-service .tour-service-container .service-list .service-info .service-content {
     font-size: 0.875rem;
   }
-  /* 투어 후기 - tablet */
-  #tour-review .best-review > li:last-child {
-    display: none;
-  }
   /* 퀵 아이콘 메뉴 -tablet */
   #quick-menu .quick-menu-container .icon-menu {
     flex-wrap: wrap;
@@ -201,16 +197,6 @@
     width: 120px;
     height: auto;
   }
-  /* 투어 후기 - mobile */
-  #tour-review {
-    box-sizing: border-box;
-  }
-  #tour-review .best-review > li {
-    display: none;
-  }
-  #tour-review .best-review > li:first-child {
-    display: block;
-  }
   /* 퀵 아이콘 메뉴 - mobile */
   #quick-menu .quick-menu-container .icon-menu li {
     flex-basis: 40%;
@@ -264,33 +250,4 @@
     width: calc(100% - 40px);
     margin: 0 8%;
   }
-  /* 투어 후기 - mobile-min 
-  #tour-review {
-    padding: 60px 0;
-    .best-review {
-      width: 100%;
-      overflow-y: hidden;
-      overflow-x: auto;
-      gap: 0;
-
-      -webkit-overflow-scrolling: none;
-      overscroll-behavior: none;
-      touch-action: pan-x;
-
-      > li {
-        min-width: 80vw;
-        flex: 1 1 auto;
-        box-shadow: none;
-
-        &:first-child {
-          margin-left: 40px;
-        }
-        &:last-child {
-          display: inline-block;
-          margin-right: 40px;
-        }
-      }
-    }
-  }
-  */
 }
