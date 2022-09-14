@@ -102,7 +102,7 @@ const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
 
 
-/* scroll 이벤트 */
+/* scroll 이벤트 
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
@@ -119,3 +119,4 @@ ScrollTrigger.create({
   once: true,
   scrub: true,
 });
+*/
