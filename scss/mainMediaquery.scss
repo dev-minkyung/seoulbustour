@@ -340,7 +340,7 @@
     }
   }
 
-  /* 투어 후기 - mobile-min */
+  /* 투어 후기 - mobile-min 
   #tour-review {
     .best-review {
       width: calc(100% - 40px);
@@ -355,8 +355,8 @@
       }
     }
   }
-
-  /* 투어 후기 - mobile-min 
+  */
+  /* 투어 후기 - mobile-min */
   #tour-review {
     padding: 60px 0;
     .best-review {
@@ -380,7 +380,7 @@
       }
       -webkit-overflow-scrolling: none;
       overscroll-behavior: none;
+      touch-action: pan-x;
     }
   }
-  */
 }
