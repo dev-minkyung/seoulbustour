@@ -254,50 +254,44 @@
     width: calc(100% - 40px);
     margin: 0 8%;
   }
+  /* 투어 후기 - mobile-min */
+  #tour-review .best-review {
+    width: calc(100% - 40px);
+    overflow-x: hidden;
+  }
+  #tour-review .best-review > li {
+    display: none;
+  }
+  #tour-review .best-review > li:first-child {
+    display: block;
+  }
   /* 투어 후기 - mobile-min 
   #tour-review {
+    padding: 60px 0;
     .best-review {
-      width: calc(100% - 40px);
-      overflow: hidden;
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      gap: 0;
+
+      -webkit-overflow-scrolling: none;
       overscroll-behavior: none;
+      touch-action: pan-x;
 
       > li {
-        display: none;
+        min-width: 80vw;
+        flex: 1 1 auto;
+        box-shadow: none;
+
         &:first-child {
-          display: block;
+          margin-left: 40px;
+        }
+        &:last-child {
+          display: inline-block;
+          margin-right: 40px;
         }
       }
     }
   }
   */
-  /* 투어 후기 - mobile-min */
-  #tour-review {
-    padding: 60px 0;
-    -webkit-overflow-scrolling: none;
-    -ms-scroll-chaining: none;
-        overscroll-behavior: none;
-    touch-action: pan-x;
-  }
-  #tour-review .best-review {
-    width: 100%;
-    overflow-y: hidden;
-    overflow-x: auto;
-    gap: 0;
-    -webkit-overflow-scrolling: none;
-    -ms-scroll-chaining: none;
-        overscroll-behavior: none;
-    touch-action: pan-x;
-  }
-  #tour-review .best-review > li {
-    min-width: 80vw;
-    flex: 1 1 auto;
-    box-shadow: none;
-  }
-  #tour-review .best-review > li:first-child {
-    margin-left: 40px;
-  }
-  #tour-review .best-review > li:last-child {
-    display: inline-block;
-    margin-right: 40px;
-  }
 }

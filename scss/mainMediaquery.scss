@@ -340,12 +340,11 @@
     }
   }
 
-  /* 투어 후기 - mobile-min 
+  /* 투어 후기 - mobile-min */
   #tour-review {
     .best-review {
       width: calc(100% - 40px);
-      overflow: hidden;
-      overscroll-behavior: none;
+      overflow-x: hidden;
 
       > li {
         display: none;
@@ -355,15 +354,10 @@
       }
     }
   }
-  */
-  /* 투어 후기 - mobile-min */
+  
+  /* 투어 후기 - mobile-min 
   #tour-review {
     padding: 60px 0;
-
-    -webkit-overflow-scrolling: none;
-    overscroll-behavior: none;
-    touch-action: pan-x;
-
     .best-review {
       width: 100%;
       overflow-y: hidden;
@@ -389,4 +383,5 @@
       }
     }
   }
+  */
 }
