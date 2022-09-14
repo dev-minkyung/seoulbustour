@@ -6,6 +6,9 @@
 /* Common */
 body {
   width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   max-width: 1920px;
   font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 16px;
@@ -13,8 +16,6 @@ body {
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #191919;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: contain;
 }
 
 section {
