@@ -87,6 +87,10 @@ new Swiper(".spot .swiper", {
     modifier: 1,
     slideShadows: false,
   },
+  navigation: {
+    prevEl: '.spot .swiper-button-prev',
+    nextEl: '.spot .swiper-button-next'
+  }
 });
 
 new Swiper(".notice .swiper", {
