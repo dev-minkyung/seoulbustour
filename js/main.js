@@ -102,25 +102,6 @@ const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
 
 
-/* scroll 이벤트 
-gsap.registerPlugin(ScrollTrigger);
-
-ScrollTrigger.create({
-  trigger: ".tour-list",
-  start: "top 90%",
-  toggleClass: { targets: ".course", className: "course-act"},
-  once: true,
-});
-
-ScrollTrigger.create({
-  trigger: "#tour-service h2",
-  start: "top 90%",
-  toggleClass: { targets: ".service", className: "service-act"},
-  once: true,
-  scrub: true,
-});
-*/
-
 /* 스크롤 이벤트 */
 const spyEls = document.querySelectorAll('.scroll-spy');
 spyEls.forEach(function (spyEl) {
