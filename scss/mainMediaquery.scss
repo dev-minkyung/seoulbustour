@@ -340,6 +340,18 @@
     }
   }
 
+  /* 투어 후기 - mobile-min */
+  #tour-review {
+    .best-review {
+      > li {
+        display: none;
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+  }
+
   /* 투어 후기 - mobile-min 
   #tour-review {
     padding: 60px 0;

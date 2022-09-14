@@ -254,6 +254,13 @@
     width: calc(100% - 40px);
     margin: 0 8%;
   }
+  /* 투어 후기 - mobile-min */
+  #tour-review .best-review > li {
+    display: none;
+  }
+  #tour-review .best-review > li:first-child {
+    display: block;
+  }
   /* 투어 후기 - mobile-min 
   #tour-review {
     padding: 60px 0;
