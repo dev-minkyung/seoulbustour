@@ -263,6 +263,7 @@
     overflow-y: hidden;
     overflow-x: auto;
     gap: 0;
+    -webkit-overflow-scrolling: none;
     -ms-scroll-chaining: none;
         overscroll-behavior: none;
     /* 스크롤바 안보이게 스타일
