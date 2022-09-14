@@ -359,11 +359,20 @@
   /* 투어 후기 - mobile-min */
   #tour-review {
     padding: 60px 0;
+
+    -webkit-overflow-scrolling: none;
+    overscroll-behavior: none;
+    touch-action: pan-x;
+
     .best-review {
       width: 100%;
       overflow-y: hidden;
       overflow-x: auto;
       gap: 0;
+
+      -webkit-overflow-scrolling: none;
+      overscroll-behavior: none;
+      touch-action: pan-x;
 
       > li {
         min-width: 80vw;
@@ -378,9 +387,6 @@
           margin-right: 40px;
         }
       }
-      -webkit-overflow-scrolling: none;
-      overscroll-behavior: none;
-      touch-action: pan-x;
     }
   }
 }

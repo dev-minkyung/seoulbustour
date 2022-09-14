@@ -273,6 +273,10 @@
   /* 투어 후기 - mobile-min */
   #tour-review {
     padding: 60px 0;
+    -webkit-overflow-scrolling: none;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+    touch-action: pan-x;
   }
   #tour-review .best-review {
     width: 100%;
