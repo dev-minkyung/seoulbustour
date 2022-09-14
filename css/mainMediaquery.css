@@ -255,6 +255,11 @@
     margin: 0 8%;
   }
   /* 투어 후기 - mobile-min */
+  #tour-review .best-review {
+    overflow: hidden;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+  }
   #tour-review .best-review > li {
     display: none;
   }
